@@ -1,0 +1,10 @@
+* text=auto eol=lf
+.gitattributes text eol=lf
+.gitignore text eol=lf
+*.R text eol=lf
+*.py text eol=lf
+*.cpp text eol=lf
+*.hpp text eol=lf
+*.dcf text eol=lf
+*.md text eol=lf
+*.tex text eol=lf

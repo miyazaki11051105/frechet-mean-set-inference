@@ -1,0 +1,24 @@
+Schema: frechet-coverage-environment-v1
+R: 4.6.1
+Platform: x86_64-pc-linux-gnu
+OS: Ubuntu 24.04
+Python: 3.12.3
+Compiler: g++ 13.3.0
+BLAS: reference BLAS 3.12.0
+CXX17: g++
+CXX17FLAGS: -g -O2
+CXX17STD: -std=gnu++17
+CXX17PICFLAGS: -fpic
+CPPFLAGS: -I/usr/local/include
+LDFLAGS: -L/usr/local/lib
+SHLIB_CXX17LD: g++ -std=gnu++17
+SHLIB_CXX17LDFLAGS: -shared
+Makeconf-MD5: 7d0513b2a0fc8e5f3573d1eef2846148
+Shlib-MD5: 40f42eab4e03f8f330aff4a3e2dbf785
+BLAS-library: libblas.so.3.12.0
+LAPACK: 3.12.0
+Threads: 1
+RNG: L'Ecuyer-CMRG; Inversion
+Master-seed: 202610074
+Required-commands: python3 g++ make flock prlimit sha256sum
+Direct-packages: Rcpp jsonlite targets crew processx nanonext

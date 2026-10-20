@@ -1,0 +1,31 @@
+Schema: certified-gl-targets-v1
+Objective: coverage
+Replications: 1000
+Workers: 32
+Execution-attempts: 3
+Sample-sizes: 50 100 200
+Euclidean-delta: 0 0.5 1
+Circle-lambda: -0.125 0 0.5 1
+B: 1999
+Alpha: 0.05
+Decimal-cutoff-gap: .01
+Stages: 16
+Initial-cells: 256
+Initial-depth: 2
+Initial-direction-tolerance: 0.1
+Pair-batch: 16
+Draw-batch: 1024
+Maximum-cells: 8388608
+Maximum-depth: 17
+Decision-refinement: observed-only-local-rank-v1
+Decision-rank-cells: 262144 1048576 4194304 16777216
+Decision-rank-depth: 60
+Decision-rank-draws: 32
+Decision-rank-start-stage: 1
+Decision-rank-fraction: 0.25
+Circle-angles: Global Local EL
+Angle-tolerance-degrees: .57
+Angle-stages: 16
+Angle-initial-cells: 8192
+Angle-maximum-cells: 65536
+Angle-calibration-cells: 262144

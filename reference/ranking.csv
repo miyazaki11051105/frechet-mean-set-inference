@@ -1,0 +1,10 @@
+geometry,n,replications,G_total,L_total,G_only_total,L_only_total,L_strict_subset_G_count
+euclidean,100,1000,5962,5850,112,0,45
+euclidean,200,1000,5914,5806,108,0,45
+euclidean,50,1000,6853,6487,366,0,157
+footrule,100,1000,5854,5273,581,0,409
+footrule,200,1000,5503,4594,909,0,644
+footrule,50,1000,7583,6141,1442,0,553
+kendall,100,1000,7667,6460,1207,0,660
+kendall,200,1000,5940,5199,741,0,478
+kendall,50,1000,10624,8730,1894,0,818

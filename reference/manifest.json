@@ -1,0 +1,190 @@
+{
+  "files": {
+    "circle.csv": "307a75bb020d47026acd1f89588f7794393d854d56f4b993e54e0d8621bb1740",
+    "coverage.csv": "e4fc0d4a70554380b6552f26c7788c6a326a445b37731df86ff86a187abb5c05",
+    "figure-coverage.template.tex": "660b50282ab91d624a7b91a18420afe9efa58679483539aae56151e92f795fba",
+    "plot-style.tex": "d910d4c93916148cd7534e997112024adf884236d2af96f9008e3237a30560ed",
+    "ranking.csv": "51125fe865d6937c0e2fc899f14d71f297e9820be03efefbb94c44b10f9a956b",
+    "table-circle.template.tex": "d0369d0f1b17b66bc67b452e71324d64b0e02a5c4ab156822103250c073aac2f",
+    "table-ranking.template.tex": "6ba76dde698d95979c067ccb9c4dac693f6bcf1a41cd84fa24a81a8318bcfb4b"
+  },
+  "mapping": {
+    "circle.csv": {
+      "display": "Exact enclosure midpoint, nearest one decimal with ties to even. Verify max(abs(display-lower), abs(upper-display)) < 3/10 exactly for every displayed value.",
+      "rows": 36,
+      "selection": "Preserve exact rational endpoints of mean angular enclosures, all 12 conditions and G/L/EL. No unresolved angle rows.",
+      "source": "angle_summary"
+    },
+    "coverage.csv": {
+      "plotted_rows": 92,
+      "rows": 90,
+      "selection": "Remove Euclidean L (identical to G) and unplotted Gaussian F reference. Preserve all remaining aggregate coverage values and exact-binomial endpoints.",
+      "source": "coverage_figure_data"
+    },
+    "ranking.csv": {
+      "rows": 9,
+      "selection": "Recover exact integer totals of resolved 24-candidate set cardinalities from their 1000-dataset averages; preserve exact resolved strict-subset counts.",
+      "source": "ranking_summary"
+    }
+  },
+  "rendered_lf_sha256": {
+    "figure-coverage.tex": "f35bceabd3b011901c5b755505e6f3450f5e5da6dd9615299e1c7cb81709b2a0",
+    "plot-style.tex": "d910d4c93916148cd7534e997112024adf884236d2af96f9008e3237a30560ed",
+    "table-circle.tex": "84f85d9a4cce90ea52e32bc92592ed3559d7e69293ac33c4b34a8f3124986d28",
+    "table-ranking.tex": "de5959af3ce36060c37771ede75579ad90c87e9dc97e86d63253772682f93190"
+  },
+  "schema": "frechet-reference-results-v1",
+  "scope": "Reference aggregates for coverage, finite-ranking cardinalities and Circle mean angular lengths; final results of completed paired runs, without a new simulation run.",
+  "source_exports": {
+    "angle_summary": {
+      "excluded_execution_columns": [],
+      "keys": [
+        "parameter",
+        "n",
+        "method"
+      ],
+      "location": "run",
+      "path": "angles/summary.csv",
+      "scientific_fingerprint": {
+        "columns": [
+          "parameter",
+          "n",
+          "method",
+          "replications",
+          "mean_degrees_lower",
+          "mean_degrees_upper",
+          "mean_degrees_lower_exact",
+          "mean_degrees_upper_exact",
+          "mean_degrees_lower_tex",
+          "mean_degrees_upper_tex",
+          "precision_attained",
+          "valid_wide"
+        ],
+        "rows": 36,
+        "sha256": "3d5a20d4c9e9821f322456044796f0a23435499e29ec8bc31982c38c629bb129"
+      }
+    },
+    "coverage_figure_data": {
+      "excluded_execution_columns": [],
+      "keys": [
+        "family",
+        "parameter",
+        "n",
+        "geometry",
+        "method"
+      ],
+      "location": "run",
+      "path": "figures/figure-data.csv",
+      "scientific_fingerprint": {
+        "columns": [
+          "family",
+          "parameter",
+          "n",
+          "geometry",
+          "method",
+          "replications",
+          "coverage_lower",
+          "coverage_upper",
+          "MC95_lower",
+          "MC95_upper",
+          "membership_unresolved"
+        ],
+        "rows": 108,
+        "sha256": "5e3235bc970f6c6a801e69a7d8121b817448a1e1baa15ee98ee9a8ae69f1fc35"
+      }
+    },
+    "ranking_summary": {
+      "excluded_execution_columns": [],
+      "keys": [
+        "geometry",
+        "n"
+      ],
+      "location": "ranking",
+      "path": "summary.csv",
+      "scientific_fingerprint": {
+        "columns": [
+          "geometry",
+          "n",
+          "replications",
+          "G_mean_lower",
+          "G_mean_upper",
+          "G_minimum_lower",
+          "G_minimum_upper",
+          "G_maximum_lower",
+          "G_maximum_upper",
+          "G_count_unresolved",
+          "L_mean_lower",
+          "L_mean_upper",
+          "L_minimum_lower",
+          "L_minimum_upper",
+          "L_maximum_lower",
+          "L_maximum_upper",
+          "L_count_unresolved",
+          "G_only_mean_lower",
+          "G_only_mean_upper",
+          "G_only_minimum_lower",
+          "G_only_minimum_upper",
+          "G_only_maximum_lower",
+          "G_only_maximum_upper",
+          "G_only_count_unresolved",
+          "L_only_mean_lower",
+          "L_only_mean_upper",
+          "L_only_minimum_lower",
+          "L_only_minimum_upper",
+          "L_only_maximum_lower",
+          "L_only_maximum_upper",
+          "L_only_count_unresolved",
+          "intersection_mean_lower",
+          "intersection_mean_upper",
+          "intersection_minimum_lower",
+          "intersection_minimum_upper",
+          "intersection_maximum_lower",
+          "intersection_maximum_upper",
+          "intersection_count_unresolved",
+          "symmetric_difference_mean_lower",
+          "symmetric_difference_mean_upper",
+          "symmetric_difference_minimum_lower",
+          "symmetric_difference_minimum_upper",
+          "symmetric_difference_maximum_lower",
+          "symmetric_difference_maximum_upper",
+          "symmetric_difference_count_unresolved",
+          "G_minus_L_mean_lower",
+          "G_minus_L_mean_upper",
+          "G_minus_L_minimum_lower",
+          "G_minus_L_minimum_upper",
+          "G_minus_L_maximum_lower",
+          "G_minus_L_maximum_upper",
+          "G_minus_L_count_unresolved",
+          "equal_certified",
+          "equal_possible",
+          "L_strict_subset_G_certified",
+          "L_strict_subset_G_possible",
+          "G_upper_cutoff_mean_lower",
+          "G_upper_cutoff_mean_upper",
+          "G_upper_cutoff_unresolved",
+          "G_calibration_pairs_missing",
+          "G_calibration_pairs_mean",
+          "G_calibration_pairs_minimum",
+          "G_calibration_pairs_maximum",
+          "G_calibration_first_endpoints_missing",
+          "G_calibration_first_endpoints_mean",
+          "G_calibration_first_endpoints_minimum",
+          "G_calibration_first_endpoints_maximum",
+          "L_upper_cutoff_mean_lower",
+          "L_upper_cutoff_mean_upper",
+          "L_upper_cutoff_unresolved",
+          "L_calibration_pairs_missing",
+          "L_calibration_pairs_mean",
+          "L_calibration_pairs_minimum",
+          "L_calibration_pairs_maximum",
+          "L_calibration_first_endpoints_missing",
+          "L_calibration_first_endpoints_mean",
+          "L_calibration_first_endpoints_minimum",
+          "L_calibration_first_endpoints_maximum"
+        ],
+        "rows": 9,
+        "sha256": "d69f99a93d0800205e0d0754569fa0fff25b0ca8f5f57b4e1d8c283848157e75"
+      }
+    }
+  }
+}

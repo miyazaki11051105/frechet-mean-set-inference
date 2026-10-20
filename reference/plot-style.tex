@@ -1,0 +1,33 @@
+\usepackage{pgfplots}
+\usepgfplotslibrary{groupplots}
+\pgfplotsset{compat=1.18}
+\definecolor{paperGlobal}{RGB}{38,77,126}
+\definecolor{paperLocal}{RGB}{183,102,39}
+\definecolor{paperEL}{RGB}{78,121,105}
+\newcommand{\paperfigurewidth}{\ifdefined\figwidth\figwidth=\linewidth\fi}
+\pgfplotsset{
+ paperaxis/.style={
+  scale only axis,width=3.9cm,height=2.0cm,
+  font=\fontsize{8}{9}\selectfont,
+  title style={font=\fontsize{8}{9}\selectfont},
+  label style={font=\fontsize{8}{9}\selectfont},
+  tick label style={font=\fontsize{7.5}{8.5}\selectfont},
+  xmode=log,log basis x=2,xmin=40,xmax=250,
+  xtick={50,100,200},xticklabels={50,100,200},
+  ymin=86,ymax=101,ytick={90,95,100},
+  axis x line*=bottom,axis y line*=left,
+  tick align=outside,tick style={black!65,thin},
+  axis line style={black!65,thin},grid=none,clip=true,
+  error bars/y dir=both,error bars/y explicit,
+  error bars/error bar style={line width=.45pt},
+  error bars/error mark options={mark size=1.4pt,line width=.45pt}
+ },
+ paperg/.style={only marks,mark=*,mark size=1.6pt,
+  color=paperGlobal,line width=.5pt},
+ paperl/.style={only marks,mark=square*,mark size=1.6pt,
+  color=paperLocal,line width=.5pt},
+ paperel/.style={only marks,mark=diamond,mark size=2pt,
+  color=paperEL,line width=.5pt},
+ paperwald/.style={only marks,mark=triangle,mark size=2pt,
+  color=black!75,line width=.5pt}
+}

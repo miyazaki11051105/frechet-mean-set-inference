@@ -1,0 +1,251 @@
+Package: backports
+Version: 1.5.1
+Source: https://cloud.r-project.org/src/contrib/backports_1.5.1.tar.gz
+SHA256: b8eeeabe3c27e1486f43e0b18dae57f0e870dd7c6979d3668df76bf0d4735bad
+Scope: project
+
+Package: cli
+Version: 3.6.6
+Source: https://cloud.r-project.org/src/contrib/cli_3.6.6.tar.gz
+SHA256: b2b58d6dd82f5798b335e39c00591686a01fd3e94399ef898e146173e36f18f9
+Scope: project
+
+Package: codetools
+Version: 0.2-20
+Source: https://cloud.r-project.org/src/contrib/codetools_0.2-20.tar.gz
+SHA256: 3be6f375ec178723ddfd559d1e8e85bfeee04a5fbaf9f53f2f844e1669fea863
+Scope: R-recommended
+
+Package: collections
+Version: 0.3.12
+Source: https://cloud.r-project.org/src/contrib/collections_0.3.12.tar.gz
+SHA256: 60e63ee65bc1889e54a008410f53cb5b643f2fffdb926c3ed12316094709c60d
+Scope: project
+
+Package: cpp11
+Version: 0.5.5
+Source: https://cloud.r-project.org/src/contrib/cpp11_0.5.5.tar.gz
+SHA256: 72486beb0605c1229bf3d422cd536224af8dc09bd389a3116f62f4c7705c62f4
+Scope: project
+
+Package: data.table
+Version: 1.18.6.1
+Source: https://cloud.r-project.org/src/contrib/data.table_1.18.6.1.tar.gz
+SHA256: f2846f45fbbdfe886f05fa7489314a56ae0f3352ae5bc1070b0cdd4f44ffa1f5
+Scope: project
+
+Package: evaluate
+Version: 1.0.5
+Source: https://cloud.r-project.org/src/contrib/evaluate_1.0.5.tar.gz
+SHA256: 47aac79f889a828a5f8b4756cb972d7c2966bb984cbae17a4bd2389a73270794
+Scope: project
+
+Package: fastmap
+Version: 1.2.0
+Source: https://cloud.r-project.org/src/contrib/fastmap_1.2.0.tar.gz
+SHA256: b1da04a2915d1d057f3c2525e295ef15016a64e6667eac83a14641bbd83b9246
+Scope: project
+
+Package: glue
+Version: 1.8.1
+Source: https://cloud.r-project.org/src/contrib/glue_1.8.1.tar.gz
+SHA256: 1c55905d3efc3d5c199ceb0bd12218e97f0d4c64df6038ff41ecef415478a122
+Scope: project
+
+Package: jsonlite
+Version: 2.0.0
+Source: https://cloud.r-project.org/src/contrib/jsonlite_2.0.0.tar.gz
+SHA256: 75eb910c82b350ec33f094779da0f87bff154c232e4ae39c9896a9b89f3ac82d
+Scope: project
+
+Package: lattice
+Version: 0.22-9
+Source: https://cloud.r-project.org/src/contrib/Archive/lattice/lattice_0.22-9.tar.gz
+SHA256: b72ad4ed2e5269fa7cf668e46f83a9b5d9d5f8fdcbc5b9886531ca19dffca4ba
+Scope: R-recommended
+
+Package: magrittr
+Version: 2.0.5
+Source: https://cloud.r-project.org/src/contrib/magrittr_2.0.5.tar.gz
+SHA256: 3f5b5b1d4e6d12807a95c50b6c88cb1d8af2c5eb5213f08bfe58f278eca2ed23
+Scope: project
+
+Package: nanonext
+Version: 1.10.3
+Source: https://cloud.r-project.org/src/contrib/nanonext_1.10.3.tar.gz
+SHA256: f025e956a290798b072ea21de68ce315f3e3d993ea95ff3a6f14e301bcffb4c5
+Scope: project
+
+Package: otel
+Version: 0.2.0
+Source: https://cloud.r-project.org/src/contrib/otel_0.2.0.tar.gz
+SHA256: ef8afe5a1bc8074bbeb8a84134699ef348a1f8ac629ffba25ee43ea7bcd8dd17
+Scope: project
+
+Package: pkgconfig
+Version: 2.0.3
+Source: https://cloud.r-project.org/src/contrib/pkgconfig_2.0.3.tar.gz
+SHA256: 330fef440ffeb842a7dcfffc8303743f1feae83e8d6131078b5a44ff11bc3850
+Scope: project
+
+Package: prettyunits
+Version: 1.2.0
+Source: https://cloud.r-project.org/src/contrib/prettyunits_1.2.0.tar.gz
+SHA256: f059f27e2a5c82e351fe05b87ad712f7afc273c651450453f59d99af5deeacea
+Scope: project
+
+Package: ps
+Version: 1.9.3
+Source: https://cloud.r-project.org/src/contrib/ps_1.9.3.tar.gz
+SHA256: 7b227f0627709a2073daf960ac612a0b87d03e18f7dd5c1938048ed440ef2e68
+Scope: project
+
+Package: R6
+Version: 2.6.1
+Source: https://cloud.r-project.org/src/contrib/R6_2.6.1.tar.gz
+SHA256: 59c6eba8b1b912eb7e104f65053235604be853425ee67c152ac4e86a1f2073b4
+Scope: project
+
+Package: Rcpp
+Version: 1.1.2
+Source: https://cloud.r-project.org/src/contrib/Rcpp_1.1.2.tar.gz
+SHA256: 2746cf2fb188e5f0a84dbf5c8f68915b54564ed33e5754572f174e7b32e7f4f3
+Scope: project
+
+Package: rlang
+Version: 1.3.0
+Source: https://cloud.r-project.org/src/contrib/rlang_1.3.0.tar.gz
+SHA256: 80aa537d49e72265f443a15e8936128af583caa5e572086518b503cbf064279c
+Scope: project
+
+Package: secretbase
+Version: 1.3.0
+Source: https://cloud.r-project.org/src/contrib/Archive/secretbase/secretbase_1.3.0.tar.gz
+SHA256: 8f53693a04e7135d7a5b7b6079124455dee42cd892f0960341f8bbd99cc531de
+Scope: project
+
+Package: utf8
+Version: 1.2.6
+Source: https://cloud.r-project.org/src/contrib/utf8_1.2.6.tar.gz
+SHA256: 4589f8b72291329e70b7f3a8c20f2feb4e7764eebad2e6976bc9a3eee7686ce9
+Scope: project
+
+Package: withr
+Version: 3.0.3
+Source: https://cloud.r-project.org/src/contrib/withr_3.0.3.tar.gz
+SHA256: d86c6454164fc85678bfc85e2a6cce42f7461d45fa9a87de71f376e7956c991e
+Scope: project
+
+Package: xfun
+Version: 0.61
+Source: https://cloud.r-project.org/src/contrib/xfun_0.61.tar.gz
+SHA256: b0deb0e2aff784e511545193e5583fc2df3a98bc877287280f19341661769530
+Scope: project
+
+Package: yaml
+Version: 2.3.12
+Source: https://cloud.r-project.org/src/contrib/yaml_2.3.12.tar.gz
+SHA256: 80ccf3dde851133ef3e333b818a817c296c6ccdacfc4709cd466995289cd556c
+Scope: project
+
+Package: base64url
+Version: 1.4
+Source: https://cloud.r-project.org/src/contrib/base64url_1.4.tar.gz
+SHA256: 1d058f138660e9155ebb331d7a2561e2541ee3321b8da90f6c41fd8dcc122c58
+Scope: project
+
+Package: highr
+Version: 0.12
+Source: https://cloud.r-project.org/src/contrib/highr_0.12.tar.gz
+SHA256: e8e1d6460022a9948799602d6b95dc78fbfa318ff6f0627e95c20b7190fc612b
+Scope: project
+
+Package: later
+Version: 1.4.8
+Source: https://cloud.r-project.org/src/contrib/later_1.4.8.tar.gz
+SHA256: ce5d88b3fd1df409eaa21aa53bf20b1a9331f75cd69e7e9b2a27b40d2290d219
+Scope: project
+
+Package: lifecycle
+Version: 1.0.5
+Source: https://cloud.r-project.org/src/contrib/lifecycle_1.0.5.tar.gz
+SHA256: 61841e3e6edba056a88355a3f1d6698ab8d5d9cb3c05f2af0ec5a44ab516f8ee
+Scope: project
+
+Package: Matrix
+Version: 1.7-5
+Source: https://cloud.r-project.org/src/contrib/Archive/Matrix/Matrix_1.7-5.tar.gz
+SHA256: 308b0edd7bcb023a8bb50cc5cec98e66b3658c94a5badfb1ce6024e595fa8a83
+Scope: R-recommended
+
+Package: mirai
+Version: 2.7.3
+Source: https://cloud.r-project.org/src/contrib/mirai_2.7.3.tar.gz
+SHA256: 20bd6fb95c6262ae24649963c399f20ef3203cda46919f5669f823a2a56bb18a
+Scope: project
+
+Package: processx
+Version: 3.9.0
+Source: https://cloud.r-project.org/src/contrib/processx_3.9.0.tar.gz
+SHA256: cdfef9035405891d8b104b258a40f62656f215aba7dcdc9f3226203c4c8fb354
+Scope: project
+
+Package: callr
+Version: 3.8.0
+Source: https://cloud.r-project.org/src/contrib/callr_3.8.0.tar.gz
+SHA256: a16b50e41ddbbf2bac236572e3e68c4ef9c76b88faf5cf840c79524c49000b06
+Scope: project
+
+Package: knitr
+Version: 1.52
+Source: https://cloud.r-project.org/src/contrib/knitr_1.52.tar.gz
+SHA256: bdd66a02dfba08a4c644b38a6ae08f6ba915c16d6b6ab6a188ec193c35905ff2
+Scope: project
+
+Package: promises
+Version: 1.5.0
+Source: https://cloud.r-project.org/src/contrib/promises_1.5.0.tar.gz
+SHA256: bb68fd4065cc072996aed416f0b2388f58738797a3a38024720c29d67164747d
+Scope: project
+
+Package: vctrs
+Version: 0.7.3
+Source: https://cloud.r-project.org/src/contrib/vctrs_0.7.3.tar.gz
+SHA256: b45078413e06ac624dddb7221a3a43908b405c8abec09822cb86638d30b0435b
+Scope: project
+
+Package: igraph
+Version: 2.3.3
+Source: https://cloud.r-project.org/src/contrib/Archive/igraph/igraph_2.3.3.tar.gz
+SHA256: 942522d815eb1de840d5cdc60745dab8f815398cda279dd4bd98444b0c07a699
+Scope: project
+
+Package: pillar
+Version: 1.11.1
+Source: https://cloud.r-project.org/src/contrib/pillar_1.11.1.tar.gz
+SHA256: 056ce154238c9b5b8d5dcbcb52e1bc51d33870ce08c8a9ca9496478bd59f4653
+Scope: project
+
+Package: tidyselect
+Version: 1.2.1
+Source: https://cloud.r-project.org/src/contrib/tidyselect_1.2.1.tar.gz
+SHA256: 169e97ba0bbfbcdf4a80534322751f87a04370310c40e27f04aac6525d45903c
+Scope: project
+
+Package: tibble
+Version: 3.3.1
+Source: https://cloud.r-project.org/src/contrib/tibble_3.3.1.tar.gz
+SHA256: fb309f8a1939021b237c7e85ff7ad6e8ff5acd57a6230d220a452094b492b28f
+Scope: project
+
+Package: crew
+Version: 1.3.3
+Source: https://cloud.r-project.org/src/contrib/crew_1.3.3.tar.gz
+SHA256: 42d0f6cbf42f41f912e5fb05372fcd7c1518da5dae8da2a69022b8df141aa6ec
+Scope: project
+
+Package: targets
+Version: 1.12.0
+Source: https://cloud.r-project.org/src/contrib/targets_1.12.0.tar.gz
+SHA256: 9ae2e0edd25bf5f34eb97f566e74073fdbe8bd968b43475a964882875fa3a06e
+Scope: project

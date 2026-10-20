@@ -1,0 +1,582 @@
+{
+  "schema": "frechet-reproducibility-release-v1",
+  "identity": {
+    "release": "reproducibility-20261020",
+    "license": "MIT",
+    "release_files": {
+      ".gitattributes": "1422f0ccf07db61a995764b50942098e01b55f482624587afb7ff092c337c8cd",
+      ".gitignore": "cd537bf4550267f5300e458b4f244d4873044635ef21546de2ff326b13322e93",
+      "LICENSE": "ce266c51fbaa3deca1a6115dd495d53cffb723cee60ec828dd69d5d9fb50c996",
+      "OPTIMIZATION_AND_CERTIFICATION.md": "bd40896f534188770349e453d24dc32f6ffc283beb0475d5c0b57e894e0e130c",
+      "README.md": "b9cc8fd57e0c489668a2e33bfd14d6e3f15d8f3f98979a2f00e817ef350567b7",
+      "_targets.R": "b393fde0803c6f94c182d1811ba94dfd7e208726c967ee4bc0b2eca7ae68472f",
+      "circle/geometry.R": "0b7b878e4b94a3f3dfbf2760fd4d3d7a5e6ea745b84d96c135a06795f15c837e",
+      "circle/length.R": "4c0a8cd7b7680b81fe0def9a7bba423a8f56194bc68563269c9333a2b3056279",
+      "circle/length.hpp": "d841a2d1f79e51aa9d3ec2ef873bcecdce52ef9eebc6a21b7ee33b1aa78f9c57",
+      "circle/numerics.hpp": "ffc60360cafb2687ff18f6ecf57b63129d4cfbbcc6130295289a14d8b563fcfc",
+      "common/exact.py": "f7abd311ff30d351efa1e6721cf3c84283a7f86a575d790e52f8078b52892300",
+      "common/inference.R": "0f70202269851b5e0842ec7f3d5461050565a747644830c08cf504096d8c4364",
+      "common/interval.hpp": "4f0d57a59ff61dafbe4cf2955e578f546d5a9c23fa7f08fa6eae824109de755e",
+      "common/numerics.cpp": "e8b23b23ff89087497e9b3479228e84b4d8e2842ab8d9325a68bfded3904d6b0",
+      "common/reproduce.R": "1621772e1701ff114d576a41b1f74d35c2f3ae0df201774c7ba7168cf925807c",
+      "coverage-layout.tex": "1ab5b49ed96942762afe76b7489271e3711aad02e8b13f0df2209a4cbb92a270",
+      "environment/packages.dcf": "6b24474476b0c0d378123e904998f2d4ddc2d886e9e9fe79167451a297df92b3",
+      "environment/runtime.dcf": "f5b305f4ac9e3a8a3e6b0074e0e1117dcd060c4b96682ef30c163a548e3886b0",
+      "euclid/geometry.R": "5c7d6f92bd6d56b31ef69c3cf750502bd12d89646bb1b5b19dccffbc75e697c6",
+      "euclid/numerics.hpp": "a3025199358c36ef915bb71c037ed48eb4e05a96304964697103580a04b115c4",
+      "export_results.py": "ce52137a757fe82374e2da1f532e181e49490b7160a9cd20fdbf35cdc7c2ca9e",
+      "plot.R": "6e001cbaedc69ac032e8c06301410291db9f3e5322e95df6dc9dbc3ccec0fcba",
+      "ranking/geometry.R": "c8139b4b430cf7efd2ee5ebf74cefb79f2c125c8f97108b2a3040df3336b75fc",
+      "ranking/numerics.hpp": "99fa62beb2cacb48913115715ee17d75da93f5e093a751a671faef765344097f",
+      "ranking/report.R": "f1d00c253e42009e4b43f4c7ad476d751b794d7df5f62ddaaff397f7a155230f",
+      "reference/circle.csv": "307a75bb020d47026acd1f89588f7794393d854d56f4b993e54e0d8621bb1740",
+      "reference/coverage.csv": "e4fc0d4a70554380b6552f26c7788c6a326a445b37731df86ff86a187abb5c05",
+      "reference/figure-coverage.template.tex": "660b50282ab91d624a7b91a18420afe9efa58679483539aae56151e92f795fba",
+      "reference/manifest.json": "37f42754ed63b4f0511de80cbdc1fab15ec899f4ba67f71e772ff90eff8ea847",
+      "reference/plot-style.tex": "d910d4c93916148cd7534e997112024adf884236d2af96f9008e3237a30560ed",
+      "reference/ranking.csv": "51125fe865d6937c0e2fc899f14d71f297e9820be03efefbb94c44b10f9a956b",
+      "reference/table-circle.template.tex": "d0369d0f1b17b66bc67b452e71324d64b0e02a5c4ab156822103250c073aac2f",
+      "reference/table-ranking.template.tex": "6ba76dde698d95979c067ccb9c4dac693f6bcf1a41cd84fa24a81a8318bcfb4b",
+      "run.R": "7664c2cf43d701c252013bd829603233fc51012935de8e29885b9d9ab5ca2dfe",
+      "settings.dcf": "96afbd69bed005b7038cb23ac32f610e0c1b13d35fa54a9f4a2a453a4a179905",
+      "setup.R": "70a2d324ee1becdd5df1343745d69ff0356894caef9a2e0ad93d0661039476c0",
+      "verify_release.py": "3ed494d02830c9a90ac44fcb71f618f631d31f6614ea1be702f72d4c13e5c467"
+    },
+    "reference_exports": {
+      "schema": "exact-exported-strings-keyed-rows-v1",
+      "csv": {
+        "coverage_raw": {
+          "location": "run",
+          "path": "raw.csv",
+          "keys": [
+            "id",
+            "geometry",
+            "method"
+          ],
+          "excluded_execution_columns": [
+            "signature",
+            "elapsed_seconds"
+          ],
+          "fingerprint": {
+            "rows": 66000,
+            "columns": [
+              "id",
+              "family",
+              "parameter",
+              "n",
+              "replication",
+              "geometry",
+              "method",
+              "B",
+              "k",
+              "cutoff_lower",
+              "cutoff_upper",
+              "cutoff_used",
+              "gap",
+              "attained",
+              "status",
+              "coverage_lower",
+              "coverage_upper",
+              "evaluation_scope",
+              "stage",
+              "max_draw_gap",
+              "input_md5",
+              "draw_hash",
+              "objective",
+              "coverage_resolved"
+            ],
+            "sha256": "1da6ec237c079fa37716ba66841091aab0d854481085cde184af0bfb18ece98e"
+          }
+        },
+        "coverage_summary": {
+          "location": "run",
+          "path": "summary.csv",
+          "keys": [
+            "family",
+            "parameter",
+            "n",
+            "geometry",
+            "method"
+          ],
+          "excluded_execution_columns": [],
+          "fingerprint": {
+            "rows": 66,
+            "columns": [
+              "family",
+              "parameter",
+              "n",
+              "geometry",
+              "method",
+              "evaluation_scope",
+              "replications",
+              "attained",
+              "unresolved",
+              "coverage_resolved",
+              "coverage_unresolved",
+              "coverage_lower",
+              "coverage_upper",
+              "maximum_cutoff_gap"
+            ],
+            "sha256": "ac93ffc4e03db7a6355fa2d53d852a8b96eaf06419852f41baea53086c3a4b5e"
+          }
+        },
+        "comparisons": {
+          "location": "run",
+          "path": "comparisons.csv",
+          "keys": [
+            "id",
+            "method"
+          ],
+          "excluded_execution_columns": [],
+          "fingerprint": {
+            "rows": 42000,
+            "columns": [
+              "id",
+              "family",
+              "parameter",
+              "n",
+              "replication",
+              "method",
+              "cutoff",
+              "decision",
+              "statistic_lower",
+              "statistic_upper",
+              "numerically_certified",
+              "center",
+              "radius",
+              "curvature",
+              "score_variance",
+              "numerical_coverage",
+              "assurance",
+              "evaluation_scope"
+            ],
+            "sha256": "c4e1980eaa0b66440ad04e605874bc147c78ec93a22d9690fb79e55b3d169b22"
+          }
+        },
+        "comparison_summary": {
+          "location": "run",
+          "path": "comparison_summary.csv",
+          "keys": [
+            "family",
+            "parameter",
+            "n",
+            "method"
+          ],
+          "excluded_execution_columns": [],
+          "fingerprint": {
+            "rows": 42,
+            "columns": [
+              "family",
+              "parameter",
+              "n",
+              "method",
+              "assurance",
+              "evaluation_scope",
+              "replications",
+              "resolved",
+              "unresolved",
+              "numerically_certified",
+              "numerical_coverage_lower",
+              "numerical_coverage_upper"
+            ],
+            "sha256": "3e440c3d0133fedd6640d36f7566e0a586c04ef1ff89f2bde564f8e9486cc920"
+          }
+        },
+        "ranking_candidates": {
+          "location": "ranking",
+          "path": "candidates.csv",
+          "keys": [
+            "id",
+            "geometry",
+            "method",
+            "candidate_id"
+          ],
+          "excluded_execution_columns": [
+            "certificate_md5",
+            "payload_hash"
+          ],
+          "fingerprint": {
+            "rows": 432000,
+            "columns": [
+              "id",
+              "n",
+              "replication",
+              "geometry",
+              "input_md5",
+              "draw_hash",
+              "original_draw_hash",
+              "method",
+              "candidate_id",
+              "ranking_key",
+              "cutoff_lower",
+              "cutoff_upper",
+              "lower_cutoff_decision",
+              "upper_cutoff_decision",
+              "lower_cutoff_raw_decision",
+              "upper_cutoff_raw_decision",
+              "lower_cutoff_certified",
+              "upper_cutoff_certified",
+              "decision",
+              "lower",
+              "upper"
+            ],
+            "sha256": "69c064962aca4e484b33136954812b7a2aa6decc4313a8b8cc33b45cc7266686"
+          }
+        },
+        "ranking_counts": {
+          "location": "ranking",
+          "path": "counts.csv",
+          "keys": [
+            "id",
+            "geometry"
+          ],
+          "excluded_execution_columns": [
+            "certificate_md5",
+            "payload_hash"
+          ],
+          "fingerprint": {
+            "rows": 9000,
+            "columns": [
+              "id",
+              "n",
+              "replication",
+              "geometry",
+              "input_md5",
+              "draw_hash",
+              "original_draw_hash",
+              "G_lower",
+              "G_upper",
+              "G_unresolved",
+              "G_resolved",
+              "L_lower",
+              "L_upper",
+              "L_unresolved",
+              "L_resolved",
+              "G_only_lower",
+              "G_only_upper",
+              "G_only_unresolved",
+              "G_only_resolved",
+              "L_only_lower",
+              "L_only_upper",
+              "L_only_unresolved",
+              "L_only_resolved",
+              "intersection_lower",
+              "intersection_upper",
+              "intersection_unresolved",
+              "intersection_resolved",
+              "symmetric_difference_lower",
+              "symmetric_difference_upper",
+              "symmetric_difference_unresolved",
+              "symmetric_difference_resolved",
+              "G_minus_L_lower",
+              "G_minus_L_upper",
+              "equal_certified",
+              "equal_possible",
+              "L_strict_subset_G_certified",
+              "L_strict_subset_G_possible",
+              "G_calibration_pairs",
+              "G_calibration_first_endpoints",
+              "L_calibration_pairs",
+              "L_calibration_first_endpoints",
+              "G_upper_cutoff_count_lower",
+              "G_upper_cutoff_count_upper",
+              "L_upper_cutoff_count_lower",
+              "L_upper_cutoff_count_upper",
+              "nesting",
+              "assurance"
+            ],
+            "sha256": "5a6a376c3103bbd6901e224d67169cfaf6820948f89c70ac41bd744569215f8d"
+          }
+        },
+        "ranking_summary": {
+          "location": "ranking",
+          "path": "summary.csv",
+          "keys": [
+            "geometry",
+            "n"
+          ],
+          "excluded_execution_columns": [],
+          "fingerprint": {
+            "rows": 9,
+            "columns": [
+              "geometry",
+              "n",
+              "replications",
+              "G_mean_lower",
+              "G_mean_upper",
+              "G_minimum_lower",
+              "G_minimum_upper",
+              "G_maximum_lower",
+              "G_maximum_upper",
+              "G_count_unresolved",
+              "L_mean_lower",
+              "L_mean_upper",
+              "L_minimum_lower",
+              "L_minimum_upper",
+              "L_maximum_lower",
+              "L_maximum_upper",
+              "L_count_unresolved",
+              "G_only_mean_lower",
+              "G_only_mean_upper",
+              "G_only_minimum_lower",
+              "G_only_minimum_upper",
+              "G_only_maximum_lower",
+              "G_only_maximum_upper",
+              "G_only_count_unresolved",
+              "L_only_mean_lower",
+              "L_only_mean_upper",
+              "L_only_minimum_lower",
+              "L_only_minimum_upper",
+              "L_only_maximum_lower",
+              "L_only_maximum_upper",
+              "L_only_count_unresolved",
+              "intersection_mean_lower",
+              "intersection_mean_upper",
+              "intersection_minimum_lower",
+              "intersection_minimum_upper",
+              "intersection_maximum_lower",
+              "intersection_maximum_upper",
+              "intersection_count_unresolved",
+              "symmetric_difference_mean_lower",
+              "symmetric_difference_mean_upper",
+              "symmetric_difference_minimum_lower",
+              "symmetric_difference_minimum_upper",
+              "symmetric_difference_maximum_lower",
+              "symmetric_difference_maximum_upper",
+              "symmetric_difference_count_unresolved",
+              "G_minus_L_mean_lower",
+              "G_minus_L_mean_upper",
+              "G_minus_L_minimum_lower",
+              "G_minus_L_minimum_upper",
+              "G_minus_L_maximum_lower",
+              "G_minus_L_maximum_upper",
+              "G_minus_L_count_unresolved",
+              "equal_certified",
+              "equal_possible",
+              "L_strict_subset_G_certified",
+              "L_strict_subset_G_possible",
+              "G_upper_cutoff_mean_lower",
+              "G_upper_cutoff_mean_upper",
+              "G_upper_cutoff_unresolved",
+              "G_calibration_pairs_missing",
+              "G_calibration_pairs_mean",
+              "G_calibration_pairs_minimum",
+              "G_calibration_pairs_maximum",
+              "G_calibration_first_endpoints_missing",
+              "G_calibration_first_endpoints_mean",
+              "G_calibration_first_endpoints_minimum",
+              "G_calibration_first_endpoints_maximum",
+              "L_upper_cutoff_mean_lower",
+              "L_upper_cutoff_mean_upper",
+              "L_upper_cutoff_unresolved",
+              "L_calibration_pairs_missing",
+              "L_calibration_pairs_mean",
+              "L_calibration_pairs_minimum",
+              "L_calibration_pairs_maximum",
+              "L_calibration_first_endpoints_missing",
+              "L_calibration_first_endpoints_mean",
+              "L_calibration_first_endpoints_minimum",
+              "L_calibration_first_endpoints_maximum"
+            ],
+            "sha256": "d69f99a93d0800205e0d0754569fa0fff25b0ca8f5f57b4e1d8c283848157e75"
+          }
+        },
+        "ranking_histograms": {
+          "location": "ranking",
+          "path": "histograms.csv",
+          "keys": [
+            "geometry",
+            "n",
+            "set",
+            "count"
+          ],
+          "excluded_execution_columns": [],
+          "fingerprint": {
+            "rows": 1791,
+            "columns": [
+              "geometry",
+              "n",
+              "set",
+              "count",
+              "frequency_lower",
+              "frequency_upper",
+              "replications"
+            ],
+            "sha256": "4c9869587888b2678824eb5aa90dae4af387cb81cac43ccec4c682c14696486d"
+          }
+        },
+        "coverage_figure_data": {
+          "location": "run",
+          "path": "figures/figure-data.csv",
+          "keys": [
+            "family",
+            "parameter",
+            "n",
+            "geometry",
+            "method"
+          ],
+          "excluded_execution_columns": [],
+          "fingerprint": {
+            "rows": 108,
+            "columns": [
+              "family",
+              "parameter",
+              "n",
+              "geometry",
+              "method",
+              "replications",
+              "coverage_lower",
+              "coverage_upper",
+              "MC95_lower",
+              "MC95_upper",
+              "membership_unresolved"
+            ],
+            "sha256": "5e3235bc970f6c6a801e69a7d8121b817448a1e1baa15ee98ee9a8ae69f1fc35"
+          }
+        },
+        "angle_raw": {
+          "location": "run",
+          "path": "angles/raw.csv",
+          "keys": [
+            "id",
+            "method"
+          ],
+          "excluded_execution_columns": [],
+          "fingerprint": {
+            "rows": 36000,
+            "columns": [
+              "id",
+              "n",
+              "parameter",
+              "replication",
+              "method",
+              "status",
+              "radian_lower_hex",
+              "radian_upper_hex",
+              "inside",
+              "outside",
+              "band",
+              "grid_size",
+              "degrees_lower",
+              "degrees_upper",
+              "degrees_width",
+              "degrees_lower_hex",
+              "degrees_upper_hex",
+              "cutoff_lower",
+              "cutoff_upper",
+              "input_md5",
+              "draw_hash",
+              "stage"
+            ],
+            "sha256": "2c2feb1f87662d181036947883f68e17a35bbeffa2848d31b781861af15c91b6"
+          }
+        },
+        "angle_summary": {
+          "location": "run",
+          "path": "angles/summary.csv",
+          "keys": [
+            "parameter",
+            "n",
+            "method"
+          ],
+          "excluded_execution_columns": [],
+          "fingerprint": {
+            "rows": 36,
+            "columns": [
+              "parameter",
+              "n",
+              "method",
+              "replications",
+              "mean_degrees_lower",
+              "mean_degrees_upper",
+              "mean_degrees_lower_exact",
+              "mean_degrees_upper_exact",
+              "mean_degrees_lower_tex",
+              "mean_degrees_upper_tex",
+              "precision_attained",
+              "valid_wide"
+            ],
+            "sha256": "3d5a20d4c9e9821f322456044796f0a23435499e29ec8bc31982c38c629bb129"
+          }
+        },
+        "angle_paired": {
+          "location": "run",
+          "path": "angles/paired.csv",
+          "keys": [
+            "parameter",
+            "n",
+            "contrast"
+          ],
+          "excluded_execution_columns": [],
+          "fingerprint": {
+            "rows": 36,
+            "columns": [
+              "parameter",
+              "n",
+              "replications",
+              "contrast",
+              "mean_degrees_lower",
+              "mean_degrees_upper",
+              "mean_degrees_lower_exact",
+              "mean_degrees_upper_exact"
+            ],
+            "sha256": "99a7d2de427a681233d65e6a28c09e72c304cab7d2c79adc2b591c47fdb50f7b"
+          }
+        },
+        "angle_ideal-coverage": {
+          "location": "run",
+          "path": "angles/ideal-coverage.csv",
+          "keys": [
+            "id",
+            "method"
+          ],
+          "excluded_execution_columns": [],
+          "fingerprint": {
+            "rows": 24000,
+            "columns": [
+              "id",
+              "n",
+              "parameter",
+              "method",
+              "coverage_lower",
+              "coverage_upper",
+              "original_lower",
+              "original_upper",
+              "target",
+              "cutoff_lower",
+              "cutoff_upper"
+            ],
+            "sha256": "4559b84df7295e1a1d00566ea3dc7554b2a9773ef98727adf13a0bd14ee50bf4"
+          }
+        },
+        "angle_table": {
+          "location": "run",
+          "path": "angles/table.csv",
+          "keys": [
+            "lambda",
+            "n"
+          ],
+          "excluded_execution_columns": [],
+          "fingerprint": {
+            "rows": 12,
+            "columns": [
+              "lambda",
+              "n",
+              "Global",
+              "Local",
+              "EL",
+              "replications"
+            ],
+            "sha256": "59e011584df66d0da311b26eecc49b9cb844c3467934f027a1cc50d425a276be"
+          }
+        }
+      },
+      "deterministic_tex_sha256": {
+        "figures/figure-coverage.tex": "c9e4d9a62289973b1b5965b54de75058eb47c5e3cc6974a0b5ef16c1d5a84d92",
+        "angles/table.tex": "b81085e4bd69ce107a6105f8cd2254a1cd33c9b51ac75c20b7eca25551b8915c"
+      },
+      "equality": "Exact column strings and declared unique keys; only explicit execution/container columns excluded; row order ignored; no numerical tolerance."
+    }
+  },
+  "identity_sha256": "1d89f02a80c5010e6ae9dc9374508427dd1a4ad3a1296bf08fe28f3824b7797a"
+}

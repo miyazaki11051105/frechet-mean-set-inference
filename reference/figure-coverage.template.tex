@@ -1,0 +1,241 @@
+\begin{figure}
+\centering
+\paperfigurewidth
+\begin{tikzpicture}
+\begin{scope}[yshift=0cm]
+\begin{groupplot}[paperaxis,width=3.9cm,group style={group size=3 by 1,horizontal sep=.6cm}]
+\nextgroupplot[title={Euclidean: $\delta=0$},ylabel={Coverage (\%)},]
+\addplot[black!55,densely dashed,line width=.45pt] coordinates {(40,95)(250,95)};
+\addplot[paperg,error bars/y dir=both,error bars/y explicit]
+table[x=x,y=y,y error minus=lo,y error plus=up,row sep=\\] {
+x y lo up\\
+@@COVERAGE_1_paperg@@
+};
+\addplot[paperwald,error bars/y dir=both,error bars/y explicit]
+table[x=x,y=y,y error minus=lo,y error plus=up,row sep=\\] {
+x y lo up\\
+@@COVERAGE_1_paperwald@@
+};
+\nextgroupplot[title={Euclidean: $\delta=1/2$},yticklabels={},]
+\addplot[black!55,densely dashed,line width=.45pt] coordinates {(40,95)(250,95)};
+\addplot[paperg,error bars/y dir=both,error bars/y explicit]
+table[x=x,y=y,y error minus=lo,y error plus=up,row sep=\\] {
+x y lo up\\
+@@COVERAGE_2_paperg@@
+};
+\addplot[paperwald,error bars/y dir=both,error bars/y explicit]
+table[x=x,y=y,y error minus=lo,y error plus=up,row sep=\\] {
+x y lo up\\
+@@COVERAGE_2_paperwald@@
+};
+\nextgroupplot[title={Euclidean: $\delta=1$},yticklabels={},]
+\addplot[black!55,densely dashed,line width=.45pt] coordinates {(40,95)(250,95)};
+\addplot[paperg,error bars/y dir=both,error bars/y explicit]
+table[x=x,y=y,y error minus=lo,y error plus=up,row sep=\\] {
+x y lo up\\
+@@COVERAGE_3_paperg@@
+};
+\addplot[paperwald,error bars/y dir=both,error bars/y explicit]
+table[x=x,y=y,y error minus=lo,y error plus=up,row sep=\\] {
+x y lo up\\
+@@COVERAGE_3_paperwald@@
+};
+\end{groupplot}
+\end{scope}
+\begin{scope}[yshift=-3.5cm]
+\begin{groupplot}[paperaxis,width=2.75cm,group style={group size=4 by 1,horizontal sep=.6cm}]
+\nextgroupplot[title={Ranking: Euclidean},ylabel={Coverage (\%)},]
+\addplot[black!55,densely dashed,line width=.45pt] coordinates {(40,95)(250,95)};
+\addplot[paperg,error bars/y dir=both,error bars/y explicit]
+table[x=x,y=y,y error minus=lo,y error plus=up,row sep=\\] {
+x y lo up\\
+@@COVERAGE_4_paperg@@
+};
+\addplot[paperl,error bars/y dir=both,error bars/y explicit]
+table[x=x,y=y,y error minus=lo,y error plus=up,row sep=\\] {
+x y lo up\\
+@@COVERAGE_4_paperl@@
+};
+\nextgroupplot[title={Ranking: Kendall},yticklabels={},]
+\addplot[black!55,densely dashed,line width=.45pt] coordinates {(40,95)(250,95)};
+\addplot[paperg,error bars/y dir=both,error bars/y explicit]
+table[x=x,y=y,y error minus=lo,y error plus=up,row sep=\\] {
+x y lo up\\
+@@COVERAGE_5_paperg@@
+};
+\addplot[paperl,error bars/y dir=both,error bars/y explicit]
+table[x=x,y=y,y error minus=lo,y error plus=up,row sep=\\] {
+x y lo up\\
+@@COVERAGE_5_paperl@@
+};
+\nextgroupplot[title={Ranking: footrule},yticklabels={},]
+\addplot[black!55,densely dashed,line width=.45pt] coordinates {(40,95)(250,95)};
+\addplot[paperg,error bars/y dir=both,error bars/y explicit]
+table[x=x,y=y,y error minus=lo,y error plus=up,row sep=\\] {
+x y lo up\\
+@@COVERAGE_6_paperg@@
+};
+\addplot[paperl,error bars/y dir=both,error bars/y explicit]
+table[x=x,y=y,y error minus=lo,y error plus=up,row sep=\\] {
+x y lo up\\
+@@COVERAGE_6_paperl@@
+};
+\nextgroupplot[title={Ranking: graph},yticklabels={},]
+\addplot[black!55,densely dashed,line width=.45pt] coordinates {(40,95)(250,95)};
+\addplot[paperg,error bars/y dir=both,error bars/y explicit]
+table[x=x,y=y,y error minus=lo,y error plus=up,row sep=\\] {
+x y lo up\\
+@@COVERAGE_7_paperg@@
+};
+\addplot[paperl,error bars/y dir=both,error bars/y explicit]
+table[x=x,y=y,y error minus=lo,y error plus=up,row sep=\\] {
+x y lo up\\
+@@COVERAGE_7_paperl@@
+};
+\end{groupplot}
+\end{scope}
+\begin{scope}[yshift=-7cm]
+\begin{groupplot}[paperaxis,width=2.75cm,height=2cm,
+ ymin=88,ymax=101,ytick={90,95,100},xtick=\empty,
+ clip marker paths=true,
+ axis x line=none,
+ group style={group name=circleupper,group size=4 by 1,horizontal sep=.6cm}]
+\nextgroupplot[title={Circle: $\lambda=-1/8$},ylabel={Coverage (\%)},]
+\addplot[black!55,densely dashed,line width=.45pt] coordinates {(40,95)(250,95)};
+\addplot[paperg,error bars/y dir=both,error bars/y explicit]
+table[x=x,y=y,y error minus=lo,y error plus=up,row sep=\\] {
+x y lo up\\
+@@COVERAGE_8_paperg@@
+};
+\addplot[paperl,error bars/y dir=both,error bars/y explicit]
+table[x=x,y=y,y error minus=lo,y error plus=up,row sep=\\] {
+x y lo up\\
+@@COVERAGE_8_paperl@@
+};
+\addplot[paperel,error bars/y dir=both,error bars/y explicit]
+table[x=x,y=y,y error minus=lo,y error plus=up,row sep=\\] {
+x y lo up\\
+@@COVERAGE_8_paperel@@
+};
+
+\nextgroupplot[title={Circle: $\lambda=0$},yticklabels={},]
+\addplot[black!55,densely dashed,line width=.45pt] coordinates {(40,95)(250,95)};
+\addplot[paperg,error bars/y dir=both,error bars/y explicit]
+table[x=x,y=y,y error minus=lo,y error plus=up,row sep=\\] {
+x y lo up\\
+@@COVERAGE_9_paperg@@
+};
+\addplot[paperl,error bars/y dir=both,error bars/y explicit]
+table[x=x,y=y,y error minus=lo,y error plus=up,row sep=\\] {
+x y lo up\\
+@@COVERAGE_9_paperl@@
+};
+\addplot[paperel,error bars/y dir=both,error bars/y explicit]
+table[x=x,y=y,y error minus=lo,y error plus=up,row sep=\\] {
+x y lo up\\
+@@COVERAGE_9_paperel@@
+};
+
+\nextgroupplot[title={Circle: $\lambda=1/2$},yticklabels={},]
+\addplot[black!55,densely dashed,line width=.45pt] coordinates {(40,95)(250,95)};
+\addplot[paperg,error bars/y dir=both,error bars/y explicit]
+table[x=x,y=y,y error minus=lo,y error plus=up,row sep=\\] {
+x y lo up\\
+@@COVERAGE_10_paperg@@
+};
+\addplot[paperl,error bars/y dir=both,error bars/y explicit]
+table[x=x,y=y,y error minus=lo,y error plus=up,row sep=\\] {
+x y lo up\\
+@@COVERAGE_10_paperl@@
+};
+\addplot[paperel,error bars/y dir=both,error bars/y explicit]
+table[x=x,y=y,y error minus=lo,y error plus=up,row sep=\\] {
+x y lo up\\
+@@COVERAGE_10_paperel@@
+};
+\addplot[paperwald,error bars/y dir=both,error bars/y explicit]
+table[x=x,y=y,y error minus=lo,y error plus=up,row sep=\\] {
+x y lo up\\
+@@COVERAGE_10_paperwald@@
+};
+\nextgroupplot[title={Circle: $\lambda=1$},yticklabels={},]
+\addplot[black!55,densely dashed,line width=.45pt] coordinates {(40,95)(250,95)};
+\addplot[paperg,error bars/y dir=both,error bars/y explicit]
+table[x=x,y=y,y error minus=lo,y error plus=up,row sep=\\] {
+x y lo up\\
+@@COVERAGE_11_paperg@@
+};
+\addplot[paperl,error bars/y dir=both,error bars/y explicit]
+table[x=x,y=y,y error minus=lo,y error plus=up,row sep=\\] {
+x y lo up\\
+@@COVERAGE_11_paperl@@
+};
+\addplot[paperel,error bars/y dir=both,error bars/y explicit]
+table[x=x,y=y,y error minus=lo,y error plus=up,row sep=\\] {
+x y lo up\\
+@@COVERAGE_11_paperel@@
+};
+\addplot[paperwald,error bars/y dir=both,error bars/y explicit]
+table[x=x,y=y,y error minus=lo,y error plus=up,row sep=\\] {
+x y lo up\\
+@@COVERAGE_11_paperwald@@
+};
+\end{groupplot}
+\foreach \p in {1,2,3,4} {
+ \draw[black!65,line width=.45pt]
+ ([shift={(-2pt,-2pt)}]circleupper c\p r1.south west) -- ++(4pt,2pt);
+ \draw[black!65,line width=.45pt]
+ ([shift={(-2pt,-4pt)}]circleupper c\p r1.south west) -- ++(4pt,2pt);
+}
+\begin{scope}[yshift=-.85cm]
+\begin{groupplot}[paperaxis,width=2.75cm,height=.7cm,
+ ymin=0,ymax=88,ytick={0,50},clip marker paths=false,
+ group style={group size=4 by 1,horizontal sep=.6cm}]
+\nextgroupplot[xlabel={$n$},ylabel={},]
+
+
+\addplot[paperel,error bars/y dir=both,error bars/y explicit]
+table[x=x,y=y,y error minus=lo,y error plus=up,row sep=\\] {
+x y lo up\\
+@@COVERAGE_12_paperel@@
+};
+\addplot[paperwald,error bars/y dir=both,error bars/y explicit]
+table[x=x,y=y,y error minus=lo,y error plus=up,row sep=\\] {
+x y lo up\\
+@@COVERAGE_12_paperwald@@
+};
+\nextgroupplot[xlabel={$n$},yticklabels={},]
+
+
+
+\addplot[paperwald,error bars/y dir=both,error bars/y explicit]
+table[x=x,y=y,y error minus=lo,y error plus=up,row sep=\\] {
+x y lo up\\
+@@COVERAGE_13_paperwald@@
+};
+\nextgroupplot[xlabel={$n$},yticklabels={},]
+
+
+
+\addplot[paperwald,error bars/y dir=both,error bars/y explicit]
+table[x=x,y=y,y error minus=lo,y error plus=up,row sep=\\] {
+x y lo up\\
+@@COVERAGE_14_paperwald@@
+};
+\nextgroupplot[xlabel={$n$},yticklabels={},]
+
+
+
+
+\end{groupplot}
+\end{scope}
+\end{scope}
+\begin{scope}[yshift=3cm]
+\node[anchor=west,font=\fontsize{8}{9}\selectfont] at (-.5,0) {\textcolor{paperGlobal}{$\bullet$}\ Global\quad\textcolor{paperLocal}{$\blacksquare$}\ Local\quad\textcolor{paperEL}{$\diamond$}\ EL\quad$\triangle$\ Wald};
+\end{scope}
+\end{tikzpicture}
+\caption{Whole-mean-set coverage (\%) with individual 95\% exact binomial
+Monte Carlo intervals (1,000 datasets per setting). Dashed lines mark 95\%,
+also the exact Gaussian reference in the Euclidean panels.}
+\label{fig:coverage}
+\end{figure}
