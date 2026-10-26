@@ -8,36 +8,36 @@ The numerical problem conditions on the observations, observed tuning, and a fin
 
 Observed tuning uses the minimum empirical risk:
 
-$$
+```math
 \varepsilon_n=F_n^\star\sqrt{\log\log n/n},\qquad \tau_n=n^{1/5}.
-$$
+```
 
 Population means are used only to evaluate coverage and decide when that evaluation can stop. Population answers are not supplied to minimization, feasible candidates, interval upper bounds, or observed tuning.
 
 ## Inversion and zero variance
 
-$$
+```math
 F_n(q)=n^{-1}\sum_i d^2(Y_i,q),\qquad
 \Delta_n(q,r)=F_n(q)-F_n(r),
-$$
+```
 
-$$
+```math
 \widehat\sigma_n^2(q,r)=n^{-1}\sum_i
 \{d^2(Y_i,q)-d^2(Y_i,r)-\Delta_n(q,r)\}^2.
-$$
+```
 
 The variance denominator is n. Over comparisons with positive variance, the inverted statistic is
 
-$$
+```math
 T_n(q)=\max\{0,\sup_r\sqrt n\Delta_n(q,r)/\widehat\sigma_n(q,r)\}.
-$$
+```
 
 A zero-variance comparison with a positive risk difference excludes the candidate at every finite cutoff. Inclusion allows equality; exclusion requires a strict inequality. For a nonnegative cutoff c, each comparison is checked through
 
-$$
+```math
 \Delta_n(q,r)\le0\quad\text{or}\quad
 c^2\widehat\sigma_n^2(q,r)-n\Delta_n(q,r)^2\ge0.
-$$
+```
 
 Continuous domains require a cover of all comparisons. A finite grid alone does not certify inclusion. Small positive variances are not set to zero by an arbitrary threshold, and no ridge is added.
 
@@ -45,26 +45,26 @@ Continuous domains require a cover of all comparisons. A finite grid alone does 
 
 G uses all ordered comparisons with positive variance. L additionally requires
 
-$$
+```math
 F_n(q)-F_n^\star\le\varepsilon_n,\qquad
 \sqrt n\Delta_n(q,r)\ge-\tau_n\widehat\sigma_n(q,r).
-$$
+```
 
 For each draw, feasible candidates satisfying the original constraints provide a lower bound, and a cover of the full domain provides an upper bound:
 
-$$
+```math
 \underline S_{n,b}^{\#}\le S_{n,b}^{\#}\le\overline S_{n,b}^{\#}
 \quad\Longrightarrow\quad
 \underline c_n:=\underline S_{n,(1900)}^{\#}
 \le c_n\le\overline S_{n,(1900)}^{\#}=:\overline c_n.
-$$
+```
 
 B=1999, and calibration uses the 1900th order statistic without interpolation. Set monotonicity gives
 
-$$
+```math
 \mathcal C_n(\underline c_n)\subseteq\mathcal C_n(c_n)
 \subseteq\mathcal C_n(\overline c_n).
-$$
+```
 
 The decision is IN if the lower-cutoff set contains every population mean, OUT if at least one population mean lies outside the upper-cutoff set, and UNRESOLVED otherwise. Coverage concerns simultaneous inclusion of all population means; no single mean is selected. A certified IN/OUT decision agrees with the ideal fixed-B procedure even when the cutoff enclosure remains wide. Attaining cutoff width .01 is not required to stop a resolved coverage evaluation. Numerical stability or termination of a local optimizer alone does not prove a global error bound.
 
@@ -83,10 +83,10 @@ For Euclidean delta=0, the sample is represented in planar N2(0,I2) coordinates.
 
 With covariance denominator n, the delta=0 Gaussian model satisfies
 
-$$
+```math
 n\bar Y_n^{\mathrm T}\widehat\Sigma_n^+\bar Y_n
 \sim\frac{2n}{n-2}F_{2,n-2}.
-$$
+```
 
 The chi-square Wald method is an asymptotic comparator; the Gaussian F method is a finite-sample reference. Circle EL retains all components of ordinary score inversion and has its own calibration, separate from G/L. Circle KDE Wald is a floating-point comparator, distinct from G/L numerical certification.
 
@@ -104,17 +104,17 @@ Compiler-setting overrides and custom Makevars are rejected. The permitted compi
 
 Calibration checks 24-by-23=552 ordered comparison pairs. The inverted confidence set is a subset of 24 rankings. These two candidate counts are reported separately. G/L invert the same full-comparison statistic; only the Local calibration domain is smaller. Consequently,
 
-$$
+```math
 c_L\le c_G,\qquad \mathcal C_L\subseteq\mathcal C_G.
-$$
+```
 
 For certified candidate indicator bounds g_q^-,g_q^+,l_q^-,l_q^+,
 
-$$
+```math
 \sum_{q=1}^{24}g_q^-\le\#\mathcal C_G\le\sum_{q=1}^{24}g_q^+,
 \qquad
 \sum_{q=1}^{24}l_q^-\le\#\mathcal C_L\le\sum_{q=1}^{24}l_q^+.
-$$
+```
 
 For each candidate, the implementation checks possible states (G,L) in {(0,0),(1,0),(1,1)} against these bounds. It also encloses counts for the intersection, G only, L only, and the symmetric difference. The L-only count is zero. When every candidate's state is determined, the counts are exact integers. Unresolved count bounds are not claimed to be sharp after accounting for the common cutoffs.
 
@@ -126,9 +126,9 @@ A `*_possible` report means the available bounds do not exclude that outcome; it
 
 The full circumference is represented by M=2^24 equal-angle cells. If I cells are certified inside and O outside, the reported total-angle interval is given by the exact rational bounds
 
-$$
-360I/M\ \le\ \operatorname{angle}(\mathcal C)\ \le\ 360(M-O)/M.
-$$
+```math
+360I/M\ \le\ \mathrm{angle}(\mathcal C)\ \le\ 360(M-O)/M.
+```
 
 All disconnected components contribute to the total. Unresolved cells and cells enclosing antipodes remain in the upper bound. Cutoff and membership-statistic monotonicity enforce L as a subset of G; contradictory certificates are execution errors.
 

@@ -7,7 +7,7 @@
       ".gitattributes": "1422f0ccf07db61a995764b50942098e01b55f482624587afb7ff092c337c8cd",
       ".gitignore": "cd537bf4550267f5300e458b4f244d4873044635ef21546de2ff326b13322e93",
       "LICENSE": "ce266c51fbaa3deca1a6115dd495d53cffb723cee60ec828dd69d5d9fb50c996",
-      "OPTIMIZATION_AND_CERTIFICATION.md": "bd40896f534188770349e453d24dc32f6ffc283beb0475d5c0b57e894e0e130c",
+      "OPTIMIZATION_AND_CERTIFICATION.md": "ed8cb6fa4cfc5660c2a5987aaa8b08a7de51ebf4bb8f9d52e49bbfa1b27dd555",
       "README.md": "b9cc8fd57e0c489668a2e33bfd14d6e3f15d8f3f98979a2f00e817ef350567b7",
       "_targets.R": "b393fde0803c6f94c182d1811ba94dfd7e208726c967ee4bc0b2eca7ae68472f",
       "circle/geometry.R": "0b7b878e4b94a3f3dfbf2760fd4d3d7a5e6ea745b84d96c135a06795f15c837e",
@@ -578,5 +578,5 @@
       "equality": "Exact column strings and declared unique keys; only explicit execution/container columns excluded; row order ignored; no numerical tolerance."
     }
   },
-  "identity_sha256": "1d89f02a80c5010e6ae9dc9374508427dd1a4ad3a1296bf08fe28f3824b7797a"
+  "identity_sha256": "d6f87d535edaa18353e0c3e0d2b9f885c91c1567f78daf6f6df2306acaa86144"
 }
